@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mng_kelola_tim',
+    'peminjaman_stadium',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project_django.urls'
+ROOT_URLCONF = 'U_LEAGUE.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_django.wsgi.application'
+WSGI_APPLICATION = 'U_LEAGUE.wsgi.application'
 
 
 # Database
