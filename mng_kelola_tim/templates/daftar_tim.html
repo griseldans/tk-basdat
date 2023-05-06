@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Form Registrasi</title>
+{% endblock meta %}
+
+{% block content %}
+
+<h2>Form Registrasi</h2>
+<div class="container-account" id="base-container">
+
+    <form method="POST" action="">        
+        <!-- nama tim -->
+        <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <label for="inputTim" class="col-form-label">Nama Tim:</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="inputTim" class="form-control" maxlength="50">
+            </div>
+        </div>
+        <!-- nama uni -->
+        <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <label for="inputUniv" class="col-form-label">Nama Tim:</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="inputTim" class="form-control" maxlength="50">
+            </div>
+        </div>
+        <div class="row g-2 align-items-center">
+            <input class="btn btn-primary" type="submit" value="Daftar">
+        </div>
+    </form>
+
+{% endblock content %}
