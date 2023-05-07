@@ -7,30 +7,30 @@
 
 {% block content %}
 
-<h2>Form Registrasi</h2>
-<div class="container-account" id="base-container">
+<h2 style="text-align: center; padding: 20px">Form Registrasi</h2>
 
+<div class="container-account center" id="form-container" style="text-align: center; width: 60%; margin: auto; padding: 30px;">
     <form method="POST" action="">        
         <!-- nama tim -->
-        <div class="row g-2 align-items-center">
-            <div class="col-auto">
-              <label for="inputTim" class="col-form-label">Nama Tim:</label>
+        <div class="row justify-content-center g-2 align-items-center" style="padding: 7px;">
+            <div class="col-4">
+              <label for="inputTim" class="col-form-label" style="text-align: left;">Nama Tim:</label>
             </div>
-            <div class="col-auto">
+            <div class="col-6">
               <input type="text" id="inputTim" class="form-control" maxlength="50">
             </div>
         </div>
         <!-- nama uni -->
-        <div class="row g-2 align-items-center">
-            <div class="col-auto">
-              <label for="inputUniv" class="col-form-label">Nama Tim:</label>
+        <div class="row justify-content-center g-2 align-items-center" style="padding: 7px;">
+            <div class="col-4">
+              <label for="inputUniv" class="col-form-label" style="text-align: left;">Nama Universitas:</label>
             </div>
-            <div class="col-auto">
+            <div class="col-6">
               <input type="text" id="inputTim" class="form-control" maxlength="50">
             </div>
         </div>
-        <div class="row g-2 align-items-center">
-            <input class="btn btn-primary" type="submit" value="Daftar">
+        <div class="row g-2 align-items-center" style="padding: 15px;">
+            <input class="btn btn-primary center" type="submit" value="Daftar" style="margin:auto; width: 30%;">
         </div>
     </form>
 </div>
