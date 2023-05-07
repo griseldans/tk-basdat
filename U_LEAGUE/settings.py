@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'peminjaman_stadium',
     'mulai_pertandingan',
     'mulai_rapat',
-    'histori_rapat'
+    'histori_rapat',
     'register_pengguna',
     'pembuatan_pertandingan',
     'pembelian_tiket',
