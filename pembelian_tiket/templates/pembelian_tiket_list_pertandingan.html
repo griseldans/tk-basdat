@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% include 'navbar_penonton.html' %}
+    <table style="text-align: center" class="table table-bordered">
+        <thead>
+            <tr>
+                <th  style="text-align: center" colspan="3">LIST PERTANDINGAN</th>
+            </tr>
+            <tr>
+                <th scope="col">Tim 1</th>
+                <th scope="col">Tim 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>
+                    <button type="submit">Pilih</button>
+                </td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+                <td>
+                    <button type="submit">Pilih</button>
+                </td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+                <td>
+                    <button type="submit">Pilih</button>
+                </td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>G</td>
+                <td>
+                    <button type="submit">Pilih</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock content %}

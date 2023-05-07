@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <div style="text-align: center">
+            <h2>FORM REGISTRASI</h2>
+        </div>
+        <form action="" method="POST">
+            <div>
+                <span>Username:</span>
+                <span><input type="username"></span>
+            </div>
+            <div>
+                <span>Password:</span>
+                <span><input type="password"></span>
+            </div>
+            <div>
+                <span>Nama Depan:</span>
+                <span><input type="namaDepan"></span>
+            </div>
+            <div>
+                <span>Nama Belakang:</span>
+                <span><input type="namaBelakang"></span>
+            </div>
+            <div>
+                <span>Nomor Hp:</span>
+                <span><input type="nomorHp"></span>
+            </div>
+            <div>
+                <span>Email:</span>
+                <span><input type="email"></span>
+            </div>
+            <div>
+                <span>Alamat:</span>
+                <span><input type="alamat"></span>
+            </div>
+            <div>
+                <span>Status:</span>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pilih
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Mahasiswa</a>
+                        <a class="dropdown-item" href="#">Dosen</a>
+                        <a class="dropdown-item" href="#">Tendik</a>
+                        <a class="dropdown-item" href="#">Alumni</a>
+                        <a class="dropdown-item" href="#">Umum</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>Jabatan:</span>
+                <span><input type="jabatan"></span>
+            </div>
+            <div style="text-align: center">    
+                <button type="button" class="btn btn-primary">Next</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
