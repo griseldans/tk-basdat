@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def histori_rapat(request):
+    context = {}
+    return render(request, 'show_histori.html', context)

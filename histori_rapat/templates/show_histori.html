@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+{% include 'navbar_manajer.html' %}
+<title>Histori Rapat</title>
+{% endblock meta %}
+
+{% block content %}
+
+<h2 style="text-align: center; padding: 10px">List Rapat</h2>
+<div class="container-account" id="base-container" style="width: 80%; margin: auto; padding: 10px">
+
+    <table class="table">
+        <thead style="text-align: center;">
+          <tr>
+            <th scope="col">Tim Bertanding</th>
+            <th scope="col">Stadium</th>
+            <th scope="col">Tanggal dan Waktu</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody style="text-align: center;">
+          <tr>
+            <!-- <th scope="row">1</th> -->
+            <td>A vs B</td>
+            <td>Stadium GBK</td>
+            <td>5 Juli 2023, 07.00-09.00</td>
+            <td>
+              <button type="button" class="btn btn-link">Lihat laporan rapat</button>
+            </td>
+          </tr>          
+      </table>
+
+</div>
+
+{% endblock content %}
