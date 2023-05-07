@@ -5,6 +5,14 @@ def daftar_tim(request):
     context = {}
     return render(request, 'daftar_tim.html', context)
 
-def datail_tim(request):
+def detail_tim(request):
     context = {}
     return render(request, 'detail_tim.html', context)
+
+def daftar_tim(request):
+    context = {}
+    return render(request, 'daftar_tim.html', context)
+
+def daftar_pelatih(request):
+    context = {}
+    return render(request, 'daftar_pelatih.html', context)
