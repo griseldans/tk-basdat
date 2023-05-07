@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'mng_kelola_tim',
     'peminjaman_stadium',
     'mulai_pertandingan',
+    'mulai_rapat',
+    'histori_rapat'
 ]
 
 MIDDLEWARE = [
