@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mng_kelola_tim',
     'peminjaman_stadium',
+    'mulai_pertandingan',
 ]
 
 MIDDLEWARE = [

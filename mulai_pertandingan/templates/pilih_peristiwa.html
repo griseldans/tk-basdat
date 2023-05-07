@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% include 'navbar_panitia.html' %}
+<div class="container h-100">
+<div class="table-responsive table-fixed">
+    <h2 class="pt-4 text-center">Pilih Peristiwa Tim &lt;Nama Tim&gt;</h2>
+    <table class=" flex table table-bordered" style="border-color:black">
+        <thead>
+          <tr>
+            <th class="text-center">Nama Pemain</th>
+            <th class="text-center">Peristiwa</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="fw-normal text-center">
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Pilih stadium</option>
+                        <option value="1">None</option>
+                        <option value="2">Pemain A</option>
+                        <option value="3">Pemain B</option>
+                      </select>
+                </td>
+                <td class="fw-normal text-center">
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Peristiwa</option>
+                        <option value="1">None</option>
+                        <option value="2">Kartu Kuning</option>
+                        <option value="3">Kartu Merah</option>
+                        <option value="3">Assist</option>
+                        <option value="3">Gol</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <tr>
+                    <td class="fw-normal text-center">
+                        <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                            <option selected>Pilih stadium</option>
+                            <option value="1">None</option>
+                            <option value="2">Pemain A</option>
+                            <option value="3">Pemain B</option>
+                          </select>
+                    </td>
+                    <td class="fw-normal text-center">
+                        <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                            <option selected>Peristiwa</option>
+                            <option value="1">None</option>
+                            <option value="2">Kartu Kuning</option>
+                            <option value="3">Kartu Merah</option>
+                            <option value="3">Assist</option>
+                            <option value="3">Gol</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td class="fw-normal text-center">
+                            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                                <option selected>Pilih stadium</option>
+                                <option value="1">None</option>
+                                <option value="2">Pemain A</option>
+                                <option value="3">Pemain B</option>
+                              </select>
+                        </td>
+                        <td class="fw-normal text-center">
+                            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                                <option selected>Peristiwa</option>
+                                <option value="1">None</option>
+                                <option value="2">Kartu Kuning</option>
+                                <option value="3">Kartu Merah</option>
+                                <option value="3">Assist</option>
+                                <option value="3">Gol</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                <th colspan="3" class="text-center"><a href="{% url 'mulai_pertandingan' %}"><button class="btn btn-primary" type="button" >Selesai</button></a></th>
+              </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+
+{% endblock content %}

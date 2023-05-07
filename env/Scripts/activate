@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Neysa\Documents\Sistem Informasi UI 2021\semester-4\basdat\tk-basdat\github-basdat\env"
+VIRTUAL_ENV="C:\Users\User\Documents\BASDAT RIL\tk-basdat\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

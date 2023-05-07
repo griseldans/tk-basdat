@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% include 'navbar_panitia.html' %}
+<div class="container h-100">
+<div class="table-responsive table-fixed">
+    <h2 class="pt-4 text-center">Mulai Pertandingan</h2>
+    <table class=" flex table table-bordered" style="border-color:black">
+        <thead>
+          <tr>
+            <th class="text-center">Tim 1</th>
+            <th class="text-center">Tim 2</th>
+            <th class="text-center"></th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="fw-normal text-center">&lt;A&gt;</Stadium></td>
+                <td class="fw-normal text-center">&lt;B&gt;</td>
+                <td class="fw-normal text-center">
+                    <div class="btn-group-vertical">
+                        <a href="{% url 'pilih_peristiwa' %}">Masukkan Peristiwa Tim 1</a>
+                        <a href="{% url 'pilih_peristiwa' %}">Masukkan Peristiwa Tim 2</a>
+                      </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="fw-normal text-center">&lt;C&gt;</Stadium></td>
+                <td class="fw-normal text-center">&lt;D&gt;</td>
+                <td class="fw-normal text-center">
+                    <div class="btn-group-vertical">
+                        <a href="{% url 'pilih_peristiwa' %}">Masukkan Peristiwa Tim 1</a>
+                        <a href="{% url 'pilih_peristiwa' %}">Masukkan Peristiwa Tim 2</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3" class="text-center"><a href="#"><button class="btn btn-primary" type="button" >Submit</button></a></th>
+              </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+
+{% endblock content %}
