@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+{% include 'navbar_manajer.html' %}
+<title>Form Registrasi</title>
+{% endblock meta %}
+
+{% block content %}
+
+<form action="" method="post">
+    <label for="pelatih">Pilih pelatih yang mau didaftarkan: </label>
+    <select name="pelatih" id="pemain">
+        <option value="pelatih2">Pelatih 2 - 2100000002</option>
+        <option value="pelatih3">Pelatih 3 - 2100000003</option>
+    </select>
+    <button type="submit" class="btn btn-primary mb-3">Pilih Pemain</button>
+</form>
+
+{% endblock content %}

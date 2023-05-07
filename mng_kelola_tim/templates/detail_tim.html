@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+{% include 'navbar_manajer.html' %}
+<title>Form Registrasi</title>
+{% endblock meta %}
+
+{% block content %}
+
+<h2>Form Registrasi</h2>
+<div class="container-account" id="base-container">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nama Pemain</th>
+            <th scope="col">No HP</th>
+            <th scope="col">Tanggal Lahir</th>
+            <th scope="col">Is Captain</th>
+            <th scope="col">Posisi</th>
+            <th scope="col">NPM</th>
+            <th scope="col">Jenjang</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <th scope="row">1</th> -->
+            <td>Nama1</td>
+            <td>HP1</td>
+            <td>2002-02-02</td>
+            <td>True</td>
+            <td>Keeper</td>
+            <td>2100000000</td>
+            <td>S1</td>
+            <td>
+                <div class="d-grid gap-2 col-2 mx-auto">
+                    <button class="btn btn-primary" type="button">Make Captain</button>
+                    <button class="btn btn-primary" type="button">Delete</button>
+                </div>
+            </td>
+          </tr>          
+      </table>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Pelatih</th>
+            <th scope="col">No HP</th>
+            <th scope="col">Email</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">Spesialisasi</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <th scope="row">1</th> -->
+            <td>Nama Pelatih 1</td>
+            <td>0812345678</td>
+            <td>pelatih1@email.com</td>
+            <td>Depok</td>
+            <td>Keeper</td>
+            <td>
+                <button class="btn btn-primary" type="button">Delete</button>
+            </td>
+          </tr>          
+    </table>
+
+    <div class="d-grid gap-2 col-5 mx-auto">
+        <button class="btn btn-primary" type="button">Pemain</button>
+        <button class="btn btn-primary" type="button">Pelatih</button>
+    </div>
+
+</div>
+
+{% endblock content %}
