@@ -7,13 +7,20 @@
 
 {% block content %}
 
-<form action="" method="post">
-    <label for="pemain">Pilih pemain yang mau didaftarkan: </label>
-    <select name="pemain" id="pemain">
-        <option value="nama2">Nama 2 - 2100000002</option>
-        <option value="nama3">Nama 3 - 2100000003</option>
-    </select>
-    <button type="submit" class="btn btn-primary mb-3">Pilih Pemain</button>
-</form>
+<h2 style="text-align: center; padding: 10px">Daftar Pemain</h2>
+<div class="container-account" id="base-container" style="width: 80%; margin: auto; padding: 10px">
+    <form action="" method="post">
+        <div style="text-align: center; padding: 10px;">
+            <label for="pemain">Pilih pemain: </label>
+            <select name="pemain" id="pemain" style="width: 30%;">
+                <option value="nama2">Nama 2 - 2100000002</option>
+                <option value="nama3">Nama 3 - 2100000003</option>
+            </select>
+        </div>
+        <div style="text-align: center; padding: 10px;">
+            <button type="submit" class="btn btn-primary mb-3" style="width: 15%;">Pilih Pemain</button>
+        </div>
+    </form>
+</div>
 
 {% endblock content %}
