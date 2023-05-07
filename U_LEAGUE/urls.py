@@ -22,4 +22,6 @@ urlpatterns = [
     path('peminjaman_stadium/', include('peminjaman_stadium.urls')),
     path('mng_kelola_tim/', include('mng_kelola_tim.urls')),
     path('mulai_pertandingan/', include('mulai_pertandingan.urls')),
+    path('mulai_rapat/', include('mulai_rapat.urls')),
+    path('histori_rapat/', include('histori_rapat.urls')),
 ]
