@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% include 'navbar_panitia.html' %}
+<div class="container h-100">
+<div class="table-responsive table-fixed">
+    <h2 class="pt-4 text-center">Buat Pertandingan</h2>
+    <table class=" flex table table-bordered" style="border-color:black">
+        <thead>
+          Pilih Wasit Utama : 
+          <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+            <option selected>Pilih Wasit Utama</option>
+            <option value="1">Wasit A</option>
+            <option value="2">Wasit B</option>
+            <option value="3">Wasit C</option>
+            <option value="4">Wasit D</option>
+          </select>
+         Pilih Wasit Pembantu/Hakim Garis : 
+            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+              <option selected>Pilih Wasit Pembantu/Hakim Garis</option>
+              <option value="1">Wasit A</option>
+              <option value="2">Wasit B</option>
+              <option value="3">Wasit C</option>
+              <option value="4">Wasit D</option>
+            </select>
+         Pilih Wasit Pembantu/Hakim Garis : 
+            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+              <option selected>Pilih Wasit Pembantu/Hakim Garis</option>
+              <option value="1">Wasit A</option>
+              <option value="2">Wasit B</option>
+              <option value="3">Wasit C</option>
+              <option value="4">Wasit D</option>
+            </select>
+         Pilih Wasit Cadangan : 
+            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+              <option selected>Pilih Wasit Cadangan</option>
+              <option value="1">Wasit A</option>
+              <option value="2">Wasit B</option>
+              <option value="3">Wasit C</option>
+              <option value="4">Wasit D</option>
+            </select>
+        </thead>
+    </table>
+    <table class=" flex table table-bordered" style="border-color:black">
+        <thead>
+          <tr>
+            <th class="text-center">Tim 1</th>
+            <th class="text-center">Tim 2</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="fw-normal text-center">
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Pilih Tim</option>
+                        <option value="1">Tim A</option>
+                        <option value="2">Tim B</option>
+                        <option value="3">Tim C</option>
+                        <option value="4">Tim D</option>
+                      </select>
+                </td>
+                <td class="fw-normal text-center">
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                     <option selected>Pilih Tim</option>
+                     <option value="1">Tim A</option>
+                     <option value="2">Tim B</option>
+                     <option value="3">Tim C</option>
+                     <option value="4">Tim D</option>
+                   </select>
+                </td>
+            </tr>
+                <th colspan="3" class="text-center"><a href="{% url 'mulai_pertandingan' %}"><button class="btn btn-primary" type="button" >Submit</button></a></th>
+              </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+
+{% endblock content %}

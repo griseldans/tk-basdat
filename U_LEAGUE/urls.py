@@ -27,4 +27,6 @@ urlpatterns = [
     path('register/', include('register_pengguna.urls')),
     path('pembuatan-pertandingan/', include('pembuatan_pertandingan.urls')),
     path('pembelian-tiket/', include('pembelian_tiket.urls')),
+    path('dashboard/', include('dashboard.urls')),
+    path('list_pertandingan/', include('list_pertandingan.urls')),
 ]

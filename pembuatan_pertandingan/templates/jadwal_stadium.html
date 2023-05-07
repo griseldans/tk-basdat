@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'navbar_panitia.html' %}
+<div class="container h-100">
+    <div class="table-responsive table-fixed">
+        <h2 class="pt-4 text-center">List Waktu &lt;Nama Stadium&gt;</h2>
+        <table class=" flex table table-bordered" style="border-color:black">
+            <thead>
+              <tr>
+                <th class="text-center" style="width: 30%">List Waktu</th>
+                <th class="text-center" style="width: 30%">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td class="fw-normal text-center">07.00-09.00</Stadium></td>
+                  <td class="fw-normal text-center">Dipesan</td>
+                </tr>
+                <tr>
+                    <td class="fw-normal text-center">10.00-12.00</Stadium></td>
+                    <td class="fw-normal text-center"><a href="{% url 'daftar_peminjaman' %}"><button class="btn btn-outline-primary btn-sm">Next</button></a></td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+{% endblock content %}
