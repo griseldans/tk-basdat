@@ -9,7 +9,7 @@ def detail_tim(request):
     context = {}
     return render(request, 'detail_tim.html', context)
 
-def daftar_tim(request):
+def daftar_pemain(request):
     context = {}
     return render(request, 'daftar_tim.html', context)
 
