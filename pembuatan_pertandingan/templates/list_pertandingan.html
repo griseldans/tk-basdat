@@ -1,83 +1,80 @@
 {% extends 'base.html' %}
 {% block content %}
-
 {% include 'navbar_panitia.html' %}
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th  style="text-align: center" colspan="4">LIST PERTANDINGAN</th>
+<div class="container h-100">
+    <div class="table-responsive table-fixed">
+        <h2 class="pt-4 text-center">List Pertandingan</h2>
+        <table class=" flex table table-bordered" style="border-color:black">
+            <thead>
+              <tr>
+                <th class="text-center" style="width: 20%">Grup A</th>
+                <th class="text-center" style="width: 20%">Action</th>
+                <th class="text-center" style="width: 20%">Grup B</th>
+                <th class="text-center" style="width: 20%">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="fw-normal text-center">&lt;A VS B&gt;</Stadium></td>
+                    <td class="fw-normal text-center"><a href="">
+                      <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                      <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
+                    <td class="fw-normal text-center">&lt;I VS J&gt;</Stadium></td>
+                    <td class="fw-normal text-center"><a href="">
+                      <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                      <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
+                </tr>
+                <tr>
+                  <td class="fw-normal text-center">&lt;C VS D&gt;</Stadium></td>
+                    <td class="fw-normal text-center"><a href="">
+                      <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                      <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
+                    <td class="fw-normal text-center">&lt;K VS L&gt;</Stadium></td>
+                    <td class="fw-normal text-center"><a href="{% url 'daftar_peminjaman' %}">
+                      <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                      <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
+              </tr>
+              <tr>
+                <td class="fw-normal text-center">&lt;E VS F&gt;</Stadium></td>
+                  <td class="fw-normal text-center"><a href="">
+                    <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                    <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
+                  <td class="fw-normal text-center">&lt;M VS N&gt;</Stadium></td>
+                  <td class="fw-normal text-center"><a href="{% url 'daftar_peminjaman' %}">
+                    <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                    <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
             </tr>
             <tr>
-                <th scope="col">Grup A</th>
-                <th scope="col">Action</th>
-                <th scope="col">Grup B</th>
-                <th scope="col">Action</th>
-            </tr>
-        </thead>
-        <tbody>
+              <td class="fw-normal text-center">&lt;G VS H&gt;</Stadium></td>
+                <td class="fw-normal text-center"><a href="">
+                  <button class="btn btn-outline-primary btn-sm">Update</button></a>
+                  <a href=""><button class="btn btn-outline-primary btn-sm">Delete</button></a></td>
+                <td class="fw-normal text-center">&lt;? VS ?&gt;</Stadium></td>
+                <td class="fw-normal text-center"><a href="">
+                  <button class="btn btn-outline-primary btn-sm">Add</button>
+                  </td>
+          </tr>
+          <thead>
             <tr>
-                <td>A vs B </td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
-                <td>I vs J</td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
+              <th class="text-center" style="width: 20%">Grup C</th>
+              <th class="text-center" style="width: 20%">Action</th>
+              <th class="text-center" style="width: 20%">Grup D</th>
+              <th class="text-center" style="width: 20%">Action</th>
             </tr>
-            <tr>
-                <td>C vs D </td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
-                <td>K vs L</td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>E vs F</td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
-                <td>M vs N</td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>G vs H </td>
-                <td>
-                    <button type="submit">update</button>
-                    <button type="submit">delete</button>
-                </td>
-                <td>? vs ?</td>
-                <td>
-                    <button type="submit">add</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: center">Grup C </td>
-                <td style="text-align: center">Action</td>
-                <td style="text-align: center">Grup D</td>
-                <td style="text-align: center">Action</td>
-            </tr>
-            <tr>
-                <td>? vs ?</td>
-                <td>
-                    <button type="submit">add</button>
-                </td>
-                <td>? vs ?</td>
-                <td>
-                    <button type="submit">add</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+          </thead>
+          <tr>
+            <td class="fw-normal text-center">&lt;? VS ?&gt;</Stadium></td>
+              <td class="fw-normal text-center"><a href="">
+                <button class="btn btn-outline-primary btn-sm">Add</button>
+              </td>
+              <td class="fw-normal text-center">&lt;? VS ?&gt;</Stadium></td>
+              <td class="fw-normal text-center"><a href="">
+                <button class="btn btn-outline-primary btn-sm">Add</button>
+              </td>
+        </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
 {% endblock content %}
+

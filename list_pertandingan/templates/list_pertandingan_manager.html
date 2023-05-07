@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'navbar_manajer.html' %}
+<div class="container h-100">
+    <div class="table-responsive table-fixed">
+        <h2 class="pt-4 text-center">List Pertandingan</h2>
+        <table class=" flex table table-bordered" style="border-color:black">
+            <thead>
+              <tr>
+                <th class="text-center" style="width: 30%">Tim Bertanding</th>
+                <th class="text-center" style="width: 30%">Stadium</th>
+                <th class="text-center" style="width: 30%">Tanggal dan Waktu</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td class="fw-normal text-center">A vs B</td>
+                  <td class="fw-normal text-center">Stadium GBK</td>
+                  <td class="fw-normal text-center">5 Juli 2023, 07.00-09.00</td>
+                </tr>
+                <tr>
+                  <td class="fw-normal text-center">C vs D</td>
+                  <td class="fw-normal text-center">Stadium UI</td>
+                  <td class="fw-normal text-center">7 Juli 2023, 13.00-15.00</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+{% endblock content %}

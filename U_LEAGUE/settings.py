@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'register_pengguna',
     'pembuatan_pertandingan',
     'pembelian_tiket',
+    'dashboard',
+    'list_pertandingan',
 ]
 
 MIDDLEWARE = [
