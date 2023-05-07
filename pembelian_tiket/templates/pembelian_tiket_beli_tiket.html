@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block meta %}
+<title>Beli Tiket</title>
+{% endblock meta %}
+
+{% block content %}
+{% include 'navbar_penonton.html' %}
+    <div style="text-align: center">
+        <h1>Beli Tiket</h1>
+    </div>
+    <div>
+        <span>Jenis Tiket : </span>
+        <span>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pilih
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">VIP</a>
+                  <a class="dropdown-item" href="#">Main East</a>
+                  <a class="dropdown-item" href="#">kategori 1</a>
+                  <a class="dropdown-item" href="#">kategori 2</a>
+                </div>
+              </div>
+        </span>
+    </div>
+    <div>
+        <span>Pembayaran : </span>
+        <span>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pilih
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Cash</a>
+                  <a class="dropdown-item" href="#">PayPal</a>
+                  <a class="dropdown-item" href="#">Kredit</a>
+                </div>
+              </div>
+        </span>
+    </div>
+    <div style="text-align: center">
+        <button class="btn btn-primary" type="submit" style="text-align: center" >BELI</button>
+    </div> 
+{% endblock content %}

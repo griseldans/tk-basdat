@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% include 'navbar_panitia.html' %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th  style="text-align: center" colspan="4">LIST PERTANDINGAN</th>
+            </tr>
+            <tr>
+                <th scope="col">Grup A</th>
+                <th scope="col">Action</th>
+                <th scope="col">Grup B</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A vs B </td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+                <td>I vs J</td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>C vs D </td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+                <td>K vs L</td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>E vs F</td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+                <td>M vs N</td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>G vs H </td>
+                <td>
+                    <button type="submit">update</button>
+                    <button type="submit">delete</button>
+                </td>
+                <td>? vs ?</td>
+                <td>
+                    <button type="submit">add</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">Grup C </td>
+                <td style="text-align: center">Action</td>
+                <td style="text-align: center">Grup D</td>
+                <td style="text-align: center">Action</td>
+            </tr>
+            <tr>
+                <td>? vs ?</td>
+                <td>
+                    <button type="submit">add</button>
+                </td>
+                <td>? vs ?</td>
+                <td>
+                    <button type="submit">add</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock content %}
