@@ -11,7 +11,7 @@ def detail_tim(request):
 
 def daftar_pemain(request):
     context = {}
-    return render(request, 'daftar_tim.html', context)
+    return render(request, 'daftar_pemain.html', context)
 
 def daftar_pelatih(request):
     context = {}
